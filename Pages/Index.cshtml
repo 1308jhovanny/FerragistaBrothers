@@ -1,0 +1,76 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Início";
+}
+
+<div>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="~/imagens/1.jpeg" style=" height: 50%; border-radius: 10px" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="~/imagens/2.jpeg" style=" height: 50%; border-radius: 10px " alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="~/imagens/3.jpeg" style=" height: 50%; border-radius: 10px" alt="Third slide">
+            </div>
+        </div>
+        
+    </div>
+    <br />
+    <div class="row" style=" color : white ">
+        <div class="col-sm-6" style="text-align:center">
+
+            <div>
+                <img src="~/imagens/serviços.png" style="width:34%; height:34%" />
+            </div>
+            <div style="border: solid; height: 175px">
+                <div>
+                    <h1 class="display-4" >
+                        Serviços Prestados
+                    </h1>
+                </div>
+
+                <p>
+                    São feitos atendimento de acordo com a necessidade do cliente, estão entre eles
+                    manutenção predial com troca de tomadas, manutenção em chuveiro, serviços de chaveiro
+                    e manutenção em geral.
+                </p>
+            </div>
+        </div>
+        <div class="col-sm-6" style="text-align:center">
+
+            <div>
+                <img src="~/imagens/produto.png" style="width:30%; height:30%" />
+            </div>
+            <div style="border:solid; height: 175px">
+                <div>
+                    <h1 class="display-4" style="border:solid, 2px">
+                        Produtos Disponíveis
+                    </h1>
+                </div>
+
+                <p>
+                    Itens disponíveis para venda na parte de manutenção predial, e também produtos de para construção,
+                    <a asp-page="/Privacy"><b><u>CLIQUE AQUI</u></b></a> para ver todos os produtos.
+                    <br />
+                    <br />
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('.carousel').carousel({
+        interval: 300
+    })
+</script>
+
